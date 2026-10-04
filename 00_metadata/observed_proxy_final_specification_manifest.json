@@ -1,0 +1,485 @@
+{
+  "manifest_name": "observed_proxy_final_specification_manifest",
+  "manifest_version": "1.0",
+  "status": "frozen_for_analysis_reproducibility; manuscript and submission files are outside this code bundle",
+  "frozen_at_utc": "2026-09-25T12:15:06.686128+00:00",
+  "project_scope": "Age and Ageing IC/Frailty project; Differentiaion/AJPH excluded",
+  "estimand": {
+    "primary_question": "Does baseline four-domain observed IC proxy information add incremental prediction of incident disability beyond age, sex, education and baseline outcome-disjoint FI?",
+    "primary_outcome": "new any ADL/IADL limitation during one fixed follow-up window among participants free of ADL/IADL limitation at baseline",
+    "primary_cohorts": [
+      "ELSA 6->7",
+      "CHARLS 3->4",
+      "HRS 10->11"
+    ],
+    "external_validation": [
+      "SHARE 6->7 primary",
+      "SHARE 6->8 sensitivity"
+    ],
+    "model_type": "fixed-window logistic regression; horizon AUC is equivalent to a fixed-window discrimination statistic, not a continuous-time survival C-index",
+    "mortality": "separate fixed-window competing-event sensitivity; not part of the frozen primary model"
+  },
+  "sample_rules": {
+    "baseline_disability": "exclude any baseline ADL/IADL limitation using cohort-specific harmonized summaries",
+    "future_outcome": "require observed follow-up ADL/IADL summaries; event is any new limitation",
+    "hrs_ic": "exclude proxy respondents at baseline and follow-up for IC measurement/prediction; proxy respondents may remain in FI-only descriptive sensitivity",
+    "share": "14 consistently observed ADL/IADL items; at least 10 observed items per person-wave; housework item excluded for structural sparsity",
+    "share_wave7": "excluded from primary longitudinal cognition analyses, but retained for this disability external validation because the endpoint/model is explicitly audited for structural missingness"
+  },
+  "frailty_definition": {
+    "name": "outcome-disjoint eight-component comparator FI",
+    "components": [
+      "hypertension",
+      "diabetes",
+      "heart_disease",
+      "stroke",
+      "cancer",
+      "arthritis",
+      "self_rated_health",
+      "BMI"
+    ],
+    "minimum_observed_components": 6,
+    "denominator": "number of observed components",
+    "self_rated_health_deficit": "(poor health scale - 1) / 4",
+    "bmi_deficit": "BMI < 18.5 or BMI >= 30",
+    "excluded_from_fi": [
+      "cognition",
+      "locomotion",
+      "grip_vitality",
+      "psychological",
+      "sensory",
+      "ADL/IADL",
+      "death"
+    ],
+    "interpretation": "outcome-disjoint comparator rather than a complete universal clinical frailty index"
+  },
+  "predictors": {
+    "base": [
+      "age",
+      "sex",
+      "education",
+      "baseline_outcome_disjoint_FI"
+    ],
+    "incremental": [
+      "cognition_proxy",
+      "locomotion_proxy",
+      "grip_vitality_proxy",
+      "psychological_proxy"
+    ],
+    "full": [
+      "age",
+      "sex",
+      "education",
+      "baseline_outcome_disjoint_FI",
+      "cognition_proxy",
+      "locomotion_proxy",
+      "grip_vitality_proxy",
+      "psychological_proxy"
+    ],
+    "direction": "all four domain proxies are coded so higher values indicate greater capacity",
+    "standardisation": "continuous predictors are z-standardised separately within each cohort-window; binary sex remains unstandardised",
+    "external_validation": "SHARE uses its own within-window standardisation parameters while pooled development coefficients and intercept are held fixed"
+  },
+  "analysis_extensions": {
+    "internal_apparent": "cohort-specific base/full fits",
+    "pooled_development": "ELSA + CHARLS + HRS complete predictor sample",
+    "leave_one_cohort_out": "train on two primary cohorts and validate in the held-out primary cohort; within-cohort standardisation is primary, pooled-reference scaling is boundary sensitivity",
+    "optimism": "400-replicate pooled bootstrap",
+    "missingness": "baseline-observable IPW sensitivity; ordinal-compatible MI is a separate bounded longitudinal FI sensitivity, not a replacement for the disability primary model",
+    "calibration": [
+      "intercept",
+      "slope",
+      "observed/expected ratio",
+      "risk deciles/quintiles"
+    ],
+    "decision_curve": "exploratory only; no clinical treatment/referral threshold is claimed"
+  },
+  "ordinal_mi_sensitivity": {
+    "estimand": "future outcome-disjoint FI adjusted for baseline FI, age and sex plus four observed IC proxies",
+    "cohorts": [
+      "ELSA 6->7",
+      "CHARLS 3->4",
+      "HRS 10->11"
+    ],
+    "m": 5,
+    "maxit": 3,
+    "seed": 20260925,
+    "methods": {
+      "multilevel_ordinal": "polr",
+      "two_level_and_binary": "logreg.boot",
+      "continuous_age_grip_bmi": "pmm"
+    },
+    "passive_recomputation": [
+      "four IC proxies",
+      "baseline FI",
+      "future FI"
+    ],
+    "structural_missingness": "not recoverable by imputation; CHARLS future self-rated-health/BMI remain structurally unavailable and are logged",
+    "diagnostic": "all two-level indicators are explicitly binary; any MICE logged events are retained in the audit table"
+  },
+  "incident_disability_mi_sensitivity": {
+    "estimand": "incident any ADL/IADL limitation after an observed baseline ADL/IADL-free frame",
+    "cohorts": [
+      "ELSA 6->7",
+      "CHARLS 3->4",
+      "HRS 10->11"
+    ],
+    "m": 5,
+    "maxit": 3,
+    "seed": 20260925,
+    "methods": {
+      "ordinal_adl_iadl": "polr where estimable; sparse-category multinomial fallback logged explicitly",
+      "two_level_and_binary": "logreg.boot",
+      "continuous_age_grip_bmi": "pmm"
+    },
+    "passive_recomputation": [
+      "incident disability",
+      "outcome-disjoint baseline FI",
+      "four observed IC proxies"
+    ],
+    "summary": "positive incremental AUC and Brier improvement were retained across all three development cohorts; this is a missing-data sensitivity and does not replace the complete-case primary model or SHARE external validation",
+    "diagnostic": "MICE logged sparse-category ordinal fallbacks and predictor-drop events are retained in ordinal_mi_disability_mice_log.csv; structural missingness is not recovered"
+  },
+  "claim_boundaries": {
+    "proxy": "conditional incremental predictive validity with independent SHARE validation; not a universally transportable clinical prediction tool",
+    "latent": "measurement-audit and cohort-specific structural evidence; no universal latent predictor, scalar invariance or latent mean ranking",
+    "transport": "conditional because ELSA held-out delta AUC CI crosses zero, SHARE 6->8 has calibration intercept drift, and pooled-reference scaling can fail"
+  },
+  "provenance": {
+    "scripts": [
+      {
+        "path": "<IC_FRAILTY_ROOT>\\66_incident_disability_prediction.py",
+        "exists": true,
+        "bytes": 34155,
+        "sha256": "0b5b470765b0e9e19f18450d769dea8288602b7bdc0994891c239e769d7b0d05",
+        "mtime_utc": "2026-09-24T10:11:01.905323+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\68_leave_one_cohort_out_disability_validation.py",
+        "exists": true,
+        "bytes": 15039,
+        "sha256": "0da0067a1951950cfb382be8b371e545cad2431a0189b80a58403b26cc86ee32",
+        "mtime_utc": "2026-09-24T14:22:12.075379+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\69_internal_bootstrap_optimism_disability.py",
+        "exists": true,
+        "bytes": 7558,
+        "sha256": "b905bf9d4c66e53ae0ba064a4fb4f60f8f804d36681db095ed0592c61d272ce3",
+        "mtime_utc": "2026-09-24T14:17:51.066766+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\70_disability_missingness_ipw_sensitivity.py",
+        "exists": true,
+        "bytes": 10221,
+        "sha256": "c53ee4a72700321156ec2ee8235053c2e9bb6a8de47a4e97c43f93628b7bb776",
+        "mtime_utc": "2026-09-24T14:27:11.379233+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\73_cross_cohort_calibration_risk_stratification.py",
+        "exists": true,
+        "bytes": 12937,
+        "sha256": "2bb817d5e46b1adabf06bbb824e3ce67429e4f17a52e05598eda1ee1346bf0a2",
+        "mtime_utc": "2026-09-25T00:52:46.361109+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\74_robustness_gate_report.py",
+        "exists": true,
+        "bytes": 20066,
+        "sha256": "75219fc08b35538b7f5f758919b60fe084d1792517d3fa6c504ee0a094745ef9",
+        "mtime_utc": "2026-09-25T09:14:27.471533+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\75_paired_delta_bootstrap_proxy.py",
+        "exists": true,
+        "bytes": 3882,
+        "sha256": "9ca248a37b20883d701e2a5d972a2f3cfc4f6b108c546a6abda8ace44dddb942",
+        "mtime_utc": "2026-09-25T09:05:19.651948+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\76_ordinal_mi_longitudinal_sensitivity.R",
+        "exists": true,
+        "bytes": 18132,
+        "sha256": "1feb183c4297240a894697798afdd2b418e6c8c184b6a0ebd22da90040526124",
+        "mtime_utc": "2026-09-25T10:52:08.844161+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\81_ordinal_mi_disability_sensitivity.R",
+        "exists": true,
+        "bytes": 17360,
+        "sha256": "e9c166538602641d3cb2a09046713addbb3af3199b31b04a8c1fc7d7bd52c0bf",
+        "mtime_utc": "2026-09-25T11:58:14.745400+00:00"
+      }
+    ],
+    "source_data": [
+      {
+        "path": "<STATISTICAL_MODELING_ROOT>\\ELSA\\Working_data\\elsa.dta",
+        "exists": true,
+        "bytes": 46522878,
+        "sha256": "c7ff66afb08a21587a37826fe4a983d4034f806e43c194d71b84fb12d309fc4b",
+        "mtime_utc": "2026-09-14T12:59:58.438826+00:00"
+      },
+      {
+        "path": "<STATISTICAL_MODELING_ROOT>\\CHARLS\\Harmonized_CHARLS\\H_CHARLS_D_Data.dta",
+        "exists": true,
+        "bytes": 136814295,
+        "sha256": "ff3b35cd1e3f708485e21158f85e9ec49ea9e53200696d838380add51b85d18b",
+        "mtime_utc": "2026-09-07T11:46:48.721503+00:00"
+      },
+      {
+        "path": "<STATISTICAL_MODELING_ROOT>\\HRS\\RAND HRS Data\\Longitudinal and Cross-Wave Data Products\\randhrs1992_2022v1.dta",
+        "exists": true,
+        "bytes": 1742325169,
+        "sha256": "9faf6db0092c2e66d1e199965c1595d183d24a9f26974e11b80bfdd94adff211",
+        "mtime_utc": "2025-05-08T02:14:06+00:00"
+      },
+      {
+        "path": "<STATISTICAL_MODELING_ROOT>\\SHARE\\SHARE_欧洲\\Working_data\\share.dta",
+        "exists": true,
+        "bytes": 186190954,
+        "sha256": "aceedcfda94882f53d57ff172e59493ab98f0715c1d31449c3c67fec9cb0adda",
+        "mtime_utc": "2026-09-14T13:05:39.038077+00:00"
+      }
+    ],
+    "outputs_and_tables": [
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\incident_disability_prediction_metrics.csv",
+        "exists": true,
+        "bytes": 3661,
+        "sha256": "955ce3efc5afcea3079f4af3ef72960274b24f6dc6dc5ac35511e4d6d831a8fc",
+        "mtime_utc": "2026-09-24T10:12:15.866805+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\incident_disability_prediction_coefficients.csv",
+        "exists": true,
+        "bytes": 7655,
+        "sha256": "514a7c1d51607f5aa187c43519ac1b6d0a8e12e895e441921e851e9507799c61",
+        "mtime_utc": "2026-09-24T10:12:15.867812+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\incident_disability_incremental_summary.csv",
+        "exists": true,
+        "bytes": 571,
+        "sha256": "45371cc90eb895e6a70a25abf187ec39ad53046b9425a9fd8a9e18e84f98e3c4",
+        "mtime_utc": "2026-09-24T10:12:15.867812+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\incident_disability_calibration.csv",
+        "exists": true,
+        "bytes": 4477,
+        "sha256": "71b66a23ab2cd8e35b75d9fd528463ea88cf46737d9279b0cabc8b792489be97",
+        "mtime_utc": "2026-09-24T10:12:15.868803+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\incident_disability_standardization_parameters.json",
+        "exists": true,
+        "bytes": 4067,
+        "sha256": "9540ebe0caa977fd5b18b2415a4e351c394b9cbb3d5f3369f9077abff07c1ebf",
+        "mtime_utc": "2026-09-24T10:12:15.870805+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\leave_one_cohort_out_metrics.csv",
+        "exists": true,
+        "bytes": 4333,
+        "sha256": "cbc50cc769cdf8d9da8cb0ce9fa61b75c33a04b90d05446def9678587e6a5cb0",
+        "mtime_utc": "2026-09-24T14:22:46.917957+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\leave_one_cohort_out_incremental.csv",
+        "exists": true,
+        "bytes": 1358,
+        "sha256": "554d714bf5fc5264dcc35b03679b72061bb42a06d8a857ec3d91f388fcbb6dd2",
+        "mtime_utc": "2026-09-24T14:22:46.917957+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\leave_one_cohort_out_standardization_parameters.json",
+        "exists": true,
+        "bytes": 13812,
+        "sha256": "dd01e4d426d9571c587ea58a18241fccf7553c61995c5903c356d6d7f468725d",
+        "mtime_utc": "2026-09-24T14:22:46.918949+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\internal_bootstrap_optimism_summary.csv",
+        "exists": true,
+        "bytes": 815,
+        "sha256": "5d2326f7fcd4e60eb4fcd503ff4cf3b16f9012bfe28527017e76de6a43af79c7",
+        "mtime_utc": "2026-09-24T14:18:29.811513+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\internal_bootstrap_optimism_incremental.csv",
+        "exists": true,
+        "bytes": 238,
+        "sha256": "6b86d404b9e8d51a79eda0171ab7c077c5ac4bf4140e445c66b4248a3cc4b69f",
+        "mtime_utc": "2026-09-24T14:18:29.813516+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\cross_cohort_calibration_metrics.csv",
+        "exists": true,
+        "bytes": 5781,
+        "sha256": "dee8eb5e56cd1a2abd50b3eb94d962eefbfc1387abf68d741da6961582342da3",
+        "mtime_utc": "2026-09-25T00:53:50.653389+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\cross_cohort_risk_strata.csv",
+        "exists": true,
+        "bytes": 19335,
+        "sha256": "4f89cd222ce35a9a414d90728dbe2b43954f78ea36e1c05df3579f909c4a91e4",
+        "mtime_utc": "2026-09-25T00:53:50.655095+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\incident_disability_missingness_ipw_metrics.csv",
+        "exists": true,
+        "bytes": 2210,
+        "sha256": "9e712902e221872cd82074739164f477cd4a9a6f25ba893c220f8bade05e96fd",
+        "mtime_utc": "2026-09-24T14:27:25.668951+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\incident_disability_missingness_ipw_incremental.csv",
+        "exists": true,
+        "bytes": 954,
+        "sha256": "a9502a72425bce41f7c263f887a6154604faad4d07c7a590962a47af17f4b5ca",
+        "mtime_utc": "2026-09-24T14:27:25.673446+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\ordinal_mi_longitudinal_coefficients_pooled.csv",
+        "exists": true,
+        "bytes": 4250,
+        "sha256": "8037d1e6a967f57ff44cd61a68b55d5926558bc05813eb2e45f7803f3c0ca10c",
+        "mtime_utc": "2026-09-25T11:06:12.128704+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\ordinal_mi_longitudinal_delta_r2.csv",
+        "exists": true,
+        "bytes": 398,
+        "sha256": "a45741d0344d961cae5131585cdf0cfd1533aa4471b6e8c870d88d28a1334c1f",
+        "mtime_utc": "2026-09-25T11:06:12.129699+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\ordinal_mi_longitudinal_imputation_replicates.csv",
+        "exists": true,
+        "bytes": 20939,
+        "sha256": "128d4fbbcbdb2ac9175fb563c648cfd8bc2062dbef7eda471636ad49cf6aa46e",
+        "mtime_utc": "2026-09-25T11:06:12.131693+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\ordinal_mi_longitudinal_missingness_methods.csv",
+        "exists": true,
+        "bytes": 8042,
+        "sha256": "4514fb266827f477bf34488db2010d663b3c88eec979a63e88d20076f57e8fb5",
+        "mtime_utc": "2026-09-25T11:06:12.132694+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\ordinal_mi_longitudinal_mice_log.csv",
+        "exists": true,
+        "bytes": 146,
+        "sha256": "81171eaa7852d5c07f4482bf6a8dd7d734388ae90bfa410a67b4c5b8aa69b152",
+        "mtime_utc": "2026-09-25T11:06:12.137874+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\ordinal_mi_disability_coefficients_pooled.csv",
+        "exists": true,
+        "bytes": 4845,
+        "sha256": "730d7a68f6d92caccae94eb4e1de5e62d22e92326124debabb88bec1e50c7ca7",
+        "mtime_utc": "2026-09-25T12:08:43.529268+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\ordinal_mi_disability_delta_metrics.csv",
+        "exists": true,
+        "bytes": 711,
+        "sha256": "a003d2f48076a8e7b318a9d4573563a2e3b77077bb9262cc0b08c6d0a23acbfb",
+        "mtime_utc": "2026-09-25T12:08:43.530273+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\ordinal_mi_disability_metrics_by_imputation.csv",
+        "exists": true,
+        "bytes": 26364,
+        "sha256": "954703d3c646d46ed92a0f316972f9c4829bc3ab0e350ad28e33717e0a0735e1",
+        "mtime_utc": "2026-09-25T12:08:43.533274+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\ordinal_mi_disability_missingness_methods.csv",
+        "exists": true,
+        "bytes": 7044,
+        "sha256": "d370995c0f0776844fc88e3f36c0389e785902980deb8b217db23e53d9e3be0e",
+        "mtime_utc": "2026-09-25T12:08:43.534274+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\tables\\ordinal_mi_disability_mice_log.csv",
+        "exists": true,
+        "bytes": 2883,
+        "sha256": "d91c227937b4b35472b03f0cbc57d3ca37e541104a94bdeb9a928e3c50bfef62",
+        "mtime_utc": "2026-09-25T12:08:43.538284+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\post_mi_robustness_diagnostic.md",
+        "exists": true,
+        "bytes": 4162,
+        "sha256": "3d27748b22e7a0ce3b9cf25c57ccaabde94b6aaea49baaa8e669f48fd745a228",
+        "mtime_utc": "2026-09-25T11:11:16.694627+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\post_mi_robustness_diagnostic.json",
+        "exists": true,
+        "bytes": 1478,
+        "sha256": "95c27cf6c9c48b87c6f1154d1c7fdcef655ad50b1f181f8a8e44b589e907e5f2",
+        "mtime_utc": "2026-09-25T11:11:40.106364+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\ordinal_mi_disability_sensitivity_memo.md",
+        "exists": true,
+        "bytes": 2022,
+        "sha256": "d1369260f24fa2bf3363e04a2579f06dda44303e73740f632a510a2ddc3630ca",
+        "mtime_utc": "2026-09-25T12:14:14.687250+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\ordinal_mi_disability_run_info.txt",
+        "exists": true,
+        "bytes": 409,
+        "sha256": "3689f9333bca030b8e09702d0e95ad018ae36d157bd10cba5b1ad8382ebd640c",
+        "mtime_utc": "2026-09-25T12:08:43.540603+00:00"
+      }
+    ],
+    "metadata": [
+      {
+        "path": "<IC_FRAILTY_ROOT>\\analysis_manifest_v2_scheme_a_share_decision.json",
+        "exists": true,
+        "bytes": 3264,
+        "sha256": "735ff97d21b47f6b8ff6e3407d98c8f4dd1a29d874f36812f87c577e1b8481b1",
+        "mtime_utc": "2026-09-23T04:57:38.018197+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\robustness_gate\\robustness_gate_decision.json",
+        "exists": true,
+        "bytes": 1299,
+        "sha256": "39f3f610b8652f63c048fc51a8cd308201a3a410f86c367f8d2292937d93a598",
+        "mtime_utc": "2026-09-25T09:14:39.388398+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\incident_disability_prediction_run_info.json",
+        "exists": true,
+        "bytes": 767,
+        "sha256": "51fdf72750a47bc65eb497ed4bffb82641d3d7c88f6cde5313e7eb44a0235f23",
+        "mtime_utc": "2026-09-24T10:12:15.871804+00:00"
+      },
+      {
+        "path": "<IC_FRAILTY_ROOT>\\ordinal_mi_longitudinal_run_info.txt",
+        "exists": true,
+        "bytes": 478,
+        "sha256": "3b9646582afe86beadf415152c9765beaa9a278443d45fd04fb0c66fe7437fd2",
+        "mtime_utc": "2026-09-25T11:06:12.140874+00:00"
+      }
+    ],
+    "software": {
+      "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "cwd": "<IC_FRAILTY_ROOT>"
+    }
+  },
+  "audit_notes": [
+    "The bundle contains executable analysis, validation, sensitivity, mechanism-extension and figure-generation code only.",
+    "Manuscript-drafting, claim-registry and literature-search scripts are intentionally excluded from the blind bundle.",
+    "All local machine paths in the supplied code are represented by environment variables or placeholders.",
+    "Aggregate outputs may be supplied for reproducibility; individual-level cohort data are not redistributed.",
+    "The code bundle does not modify manuscript, figure or submission files."
+  ]
+}

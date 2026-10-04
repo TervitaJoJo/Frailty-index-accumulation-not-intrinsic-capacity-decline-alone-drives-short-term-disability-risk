@@ -1,0 +1,93 @@
+{
+  "analysis_title": "Cross-national latent construct comparison of intrinsic capacity and outcome-disjoint frailty",
+  "status": "exploratory_manifest_v2_source_audited",
+  "primary_cohorts": [
+    "ELSA",
+    "SHARE",
+    "CHARLS",
+    "HRS"
+  ],
+  "external_validation_cohort": [
+    "LASI"
+  ],
+  "supplementary_cohorts": [
+    "KLoSA",
+    "MHAS",
+    "HAALSI"
+  ],
+  "anchor_waves": {
+    "ELSA": 6,
+    "SHARE": 6,
+    "CHARLS": 3,
+    "HRS": 10,
+    "LASI": 1
+  },
+  "primary_comparison_design": "anchor_wave_multigroup_latent_comparison",
+  "primary_wave_scope_user_selected": true,
+  "longitudinal_extension": "all_available_waves_as_sensitivity_or_secondary_analysis_after_module_missingness_audit",
+  "ic_primary_domains": [
+    {
+      "domain": "cognition",
+      "role": "primary",
+      "measurement": "source-audited cohort-specific observed cognitive tests or domain latent score; legacy subjective memory excluded"
+    },
+    {
+      "domain": "locomotion",
+      "role": "primary",
+      "measurement": "self-reported locomotion difficulty"
+    },
+    {
+      "domain": "grip_vitality",
+      "role": "primary",
+      "measurement": "grip strength or vitality indicator; objective module retained for sensitivity"
+    },
+    {
+      "domain": "psychological",
+      "role": "primary",
+      "measurement": "cohort-specific depressive symptom scale"
+    },
+    {
+      "domain": "sensory",
+      "role": "sensitivity",
+      "measurement": "vision/hearing where both domains are auditable"
+    }
+  ],
+  "frailty_primary": {
+    "construct": "outcome_disjoint_health_deficit_index",
+    "components": [
+      "hypertension",
+      "diabetes",
+      "heart_disease",
+      "stroke",
+      "cancer",
+      "arthritis",
+      "self_rated_health",
+      "bmi"
+    ],
+    "denominator_rule": "minimum 6 of 8 observed; FI denominator equals the number of observed components",
+    "complete_8_sensitivity": true,
+    "exclude_from_primary": [
+      "cognition",
+      "locomotion",
+      "grip_vitality",
+      "psychological",
+      "sensory",
+      "ADL_IADL",
+      "death"
+    ],
+    "cutpoints_status": "primary BMI deficit fixed at BMI<18.5 or BMI>=30; cohort-percentile BMI sensitivity (user selected)",
+    "self_rated_health_rule": "label-aware 0-1 deficit; poor-is-low cohorts reversed, poor-is-high cohorts mapped directly"
+  },
+  "share_cognition": {
+    "source": "raw gv_imputations",
+    "retain_implicat": true,
+    "never_stack_as_independent_rows": true,
+    "wave_7_status": "excluded_from_primary_longitudinal_cognition; sensitivity_only"
+  },
+  "not_yet_frozen": [
+    "proxy interview and module-subsample rules",
+    "survey weights and MI-compatible estimator",
+    "measurement invariance/alignment model specification",
+    "SHARE wave-7 implementation details for sensitivity-only flag-aware analysis"
+  ]
+}

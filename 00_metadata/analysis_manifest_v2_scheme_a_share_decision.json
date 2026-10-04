@@ -1,0 +1,85 @@
+{
+  "analysis_title": "Cross-national latent construct comparison of intrinsic capacity and outcome-disjoint frailty",
+  "version": "exploratory_manifest_v2_scheme_a_share_decision",
+  "status": "exploratory; source-audited; no cross-cohort invariance fit yet",
+  "primary_latent_comparison_cohorts": [
+    "ELSA",
+    "CHARLS",
+    "HRS"
+  ],
+  "share_role": "external_structural_validation_and_sensitivity",
+  "share_exclusion_reason": "wave-6 two-item locomotion CFA failed post-check because rare walkra produced boundary/negative residual variance; the fit indices alone are not accepted as measurement evidence",
+  "share_mobility_sensitivity": {
+    "source": "wave-6 self-reported walkra and walk100a",
+    "options": [
+      "mobility_sum",
+      "mobility_hierarchical"
+    ],
+    "coverage_pct": {
+      "mobility_sum": 99.77077363896848,
+      "mobility_hierarchical": 99.7810594372199
+    },
+    "definition": "0=no difficulty; 1=100-metre difficulty only; 2=across-room difficulty or both",
+    "role": "sensitivity/external validation only"
+  },
+  "external_validation_cohorts": [
+    "SHARE",
+    "LASI"
+  ],
+  "anchor_waves": {
+    "ELSA": 6,
+    "CHARLS": 3,
+    "HRS": 10,
+    "SHARE": 6,
+    "LASI": 1
+  },
+  "primary_comparison_design": "anchor-wave within-cohort domain CFA followed by domain-level partial invariance/alignment among ELSA, CHARLS, HRS",
+  "longitudinal_extension": "all available waves as sensitivity or secondary analysis after module missingness audit; SHARE wave 7 excluded from primary cognition",
+  "domain_rules": {
+    "primary_latent_domains": [
+      "cognition",
+      "locomotion",
+      "grip_vitality",
+      "psychological"
+    ],
+    "SHARE": "cognition, grip_vitality, psychological retained as external exploratory domains; locomotion composite only",
+    "LASI": "external structure validation; psychological remains single-indicator"
+  },
+  "frailty_primary": {
+    "construct": "outcome_disjoint_health_deficit_index",
+    "components": [
+      "hypertension",
+      "diabetes",
+      "heart_disease",
+      "stroke",
+      "cancer",
+      "arthritis",
+      "self_rated_health",
+      "bmi"
+    ],
+    "denominator_rule": "minimum 6 of 8 observed; FI denominator equals number of observed components",
+    "complete_8_sensitivity": true,
+    "exclude_from_primary": [
+      "cognition",
+      "locomotion",
+      "grip_vitality",
+      "psychological",
+      "sensory",
+      "ADL_IADL",
+      "death"
+    ],
+    "bmi_rule": "BMI<18.5 or BMI>=30 primary; cohort-percentile BMI sensitivity"
+  },
+  "next_gate": [
+    "compare SHARE mobility_sum and mobility_hierarchical as external/sensitivity scores",
+    "carry HRS non-proxy restriction into all IC measurement models; retain proxy respondents only for FI descriptives/sensitivity",
+    "do not claim cross-national scalar invariance before partial-invariance/alignment fit"
+  ],
+  "hrs_ic_measurement_sample": {
+    "active_rule": "inw10==1 & r10proxy==0",
+    "excluded_from_ic_measurement": "proxy respondents",
+    "proxy_role": "retain in FI descriptives and sensitivity analyses",
+    "n_active_nonproxy_anchor_wave10": 20652,
+    "n_proxy_excluded": 1382
+  }
+}

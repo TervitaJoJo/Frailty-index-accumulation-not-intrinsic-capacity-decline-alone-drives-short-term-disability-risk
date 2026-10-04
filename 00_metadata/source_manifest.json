@@ -1,0 +1,74 @@
+[
+  {
+    "dataset": "CHARLS",
+    "status": "read_metadata",
+    "source_relative": "CHARLS\\Harmonized_CHARLS\\H_CHARLS_D_Data.dta",
+    "file_size_bytes": 136814295,
+    "n_rows": 25586,
+    "n_columns": 3399,
+    "file_encoding": null
+  },
+  {
+    "dataset": "HRS",
+    "status": "read_metadata",
+    "source_relative": "HRS\\RAND HRS Data\\Longitudinal and Cross-Wave Data Products\\randhrs1992_2022v1.dta",
+    "file_size_bytes": 1742325169,
+    "n_rows": 45234,
+    "n_columns": 19880,
+    "file_encoding": null
+  },
+  {
+    "dataset": "ELSA",
+    "status": "read_metadata",
+    "source_relative": "ELSA\\Working_data\\elsa.dta",
+    "file_size_bytes": 46522878,
+    "n_rows": 90069,
+    "n_columns": 343,
+    "file_encoding": null
+  },
+  {
+    "dataset": "SHARE",
+    "status": "read_metadata",
+    "source_relative": "SHARE\\SHARE_欧洲\\Working_data\\share.dta",
+    "file_size_bytes": 186190954,
+    "n_rows": 327266,
+    "n_columns": 228,
+    "file_encoding": null
+  },
+  {
+    "dataset": "KLoSA",
+    "status": "read_metadata",
+    "source_relative": "KLoSA\\KLoSA_韩国\\Working_data\\klosa.dta",
+    "file_size_bytes": 15478158,
+    "n_rows": 44273,
+    "n_columns": 236,
+    "file_encoding": null
+  },
+  {
+    "dataset": "MHAS",
+    "status": "read_metadata",
+    "source_relative": "MHAS\\MHAS_墨西哥\\Working_data\\mhas.dta",
+    "file_size_bytes": 28764123,
+    "n_rows": 76506,
+    "n_columns": 242,
+    "file_encoding": null
+  },
+  {
+    "dataset": "HAALSI",
+    "status": "read_metadata",
+    "source_relative": "HAALSI\\Wave3\\HAALSI W1-3 Longitudinal Dataset.dta",
+    "file_size_bytes": 73864721,
+    "n_rows": 5059,
+    "n_columns": 6169,
+    "file_encoding": null
+  },
+  {
+    "dataset": "LASI",
+    "status": "read_metadata",
+    "source_relative": "LASI\\LASI_印度\\Working_data\\lasi.dta",
+    "file_size_bytes": 36115440,
+    "n_rows": 73408,
+    "n_columns": 331,
+    "file_encoding": null
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "script": "revision_methodological_robustness_20261004.py",
+  "seed": 20261004,
+  "bootstrap_replicates": 400,
+  "cohorts": [
+    "ELSA",
+    "CHARLS",
+    "HRS"
+  ],
+  "analyses": [
+    "nested_incremental_state_model",
+    "continuous_change_interaction",
+    "optimism_corrected_incremental_auc_brier",
+    "survey_weighted_state_sensitivity",
+    "FI excluding self-rated health and BMI, minimum 5/6 or complete 6/6 disease components"
+  ],
+  "aggregate_only": true,
+  "script_sha256": "cb67e8521a7115efd922fb23485a3d616a9913d64347060cec55a36fb61cb2d7"
+}

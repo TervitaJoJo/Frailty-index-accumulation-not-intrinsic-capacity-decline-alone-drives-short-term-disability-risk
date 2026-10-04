@@ -1,0 +1,2 @@
+analysis,n,events,base_model,full_model,likelihood_ratio,likelihood_ratio_df,likelihood_ratio_p,coupled_vs_fi_only_OR,coupled_vs_fi_only_OR_low,coupled_vs_fi_only_OR_high,coupled_vs_fi_only_p
+nested_incremental_state_model,18525,2097,event ~ fi_accumulation + age_baseline + male + education + baseline_fi + C(cohort),event ~ fi_accumulation + age_baseline + male + education + baseline_fi + C(cohort) + ic_decline + interaction,5.62825296687879,2,0.059957069365230285,1.0670530864452747,0.9377422548331358,1.214195354239415,0.3247764898609474

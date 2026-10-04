@@ -1,0 +1,10 @@
+cohort,baseline_fi_band,contrast,n,events,OR,OR_low,OR_high,p,formula
+CHARLS,<0.125,ic_decline_only vs preserved_low,2548,296,1.2032078578416583,0.7269648716871808,1.9914430608070335,0.47178053924305696,"event ~ C(state, Treatment(reference='preserved_low')) + age_baseline + male + education + baseline_fi"
+CHARLS,<0.125,fi_accumulation_only vs preserved_low,2548,296,1.7019285944433395,1.0645756639767505,2.7208596237901035,0.02632601643065785,"event ~ C(state, Treatment(reference='preserved_low')) + age_baseline + male + education + baseline_fi"
+CHARLS,<0.125,coupled vs preserved_low,2548,296,1.5144544114429284,0.9615120209949636,2.3853806445036225,0.07335129907258027,"event ~ C(state, Treatment(reference='preserved_low')) + age_baseline + male + education + baseline_fi"
+ELSA,<0.125,ic_decline_only vs preserved_low,1518,83,0.6868904861566214,0.35113162471211223,1.3437084750179278,0.27262704418211703,"event ~ C(state, Treatment(reference='preserved_low')) + age_baseline + male + education + baseline_fi"
+ELSA,<0.125,fi_accumulation_only vs preserved_low,1518,83,1.1393627136050695,0.5814126539745499,2.2327470588734917,0.7038742136122541,"event ~ C(state, Treatment(reference='preserved_low')) + age_baseline + male + education + baseline_fi"
+ELSA,<0.125,coupled vs preserved_low,1518,83,1.343058866779745,0.7358239085356293,2.451411402526275,0.3366829204662577,"event ~ C(state, Treatment(reference='preserved_low')) + age_baseline + male + education + baseline_fi"
+HRS,<0.125,ic_decline_only vs preserved_low,1495,61,0.5427276988507663,0.1769613940484318,1.6645062991492545,0.2851402676427238,"event ~ C(state, Treatment(reference='preserved_low')) + age_baseline + male + education + baseline_fi"
+HRS,<0.125,fi_accumulation_only vs preserved_low,1495,61,1.751392723451061,0.7022724917128275,4.367786732292559,0.2293871939663663,"event ~ C(state, Treatment(reference='preserved_low')) + age_baseline + male + education + baseline_fi"
+HRS,<0.125,coupled vs preserved_low,1495,61,2.769989406501966,1.212909678348864,6.325979130266457,0.015602930826962815,"event ~ C(state, Treatment(reference='preserved_low')) + age_baseline + male + education + baseline_fi"

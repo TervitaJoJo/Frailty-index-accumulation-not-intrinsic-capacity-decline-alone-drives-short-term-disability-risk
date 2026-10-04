@@ -1,0 +1,4 @@
+analysis,term,n,events,OR_per_SD,OR_low,OR_high,p,formula
+continuous_change_interaction,delta_ic_z,18525,2097,0.867426959340798,0.8252407342917519,0.9117697400589195,2.255566202561716e-08,event ~ delta_ic_z + delta_fi_z + delta_interaction + age_baseline + male + education + baseline_fi + C(cohort)
+continuous_change_interaction,delta_fi_z,18525,2097,1.1887451127584892,1.1333008532359776,1.2469018611185607,1.2953654837596654e-12,event ~ delta_ic_z + delta_fi_z + delta_interaction + age_baseline + male + education + baseline_fi + C(cohort)
+continuous_change_interaction,delta_interaction,18525,2097,0.9845198271956619,0.9439772582593652,1.026803645596999,0.46713716533005645,event ~ delta_ic_z + delta_fi_z + delta_interaction + age_baseline + male + education + baseline_fi + C(cohort)

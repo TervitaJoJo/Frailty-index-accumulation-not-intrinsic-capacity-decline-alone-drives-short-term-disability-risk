@@ -1,0 +1,7 @@
+cohort,definition,n,events,coupled_vs_alt_FI_only_OR,OR_low,OR_high,p,formula
+ELSA,fi_disease_min5,4618,391,1.1168344972627577,0.7256463795902812,1.718907899713392,0.6154799499699977,"event ~ C(alt_state, Treatment(reference='fi_accumulation_only')) + age_baseline + male + education + fi_disease_min5_base + C(cohort)"
+ELSA,fi_disease_complete6,4618,391,1.1168344972627577,0.7256463795902812,1.718907899713392,0.6154799499699977,"event ~ C(alt_state, Treatment(reference='fi_accumulation_only')) + age_baseline + male + education + fi_disease_complete6_base + C(cohort)"
+CHARLS,fi_disease_min5,5810,920,1.147786620365798,0.8901361219458351,1.4800142286225582,0.2879237564733709,"event ~ C(alt_state, Treatment(reference='fi_accumulation_only')) + age_baseline + male + education + fi_disease_min5_base + C(cohort)"
+CHARLS,fi_disease_complete6,5739,909,1.2627033080645493,0.9659483596679866,1.6506261729614469,0.08791489516660526,"event ~ C(alt_state, Treatment(reference='fi_accumulation_only')) + age_baseline + male + education + fi_disease_complete6_base + C(cohort)"
+HRS,fi_disease_min5,8088,782,1.0665374040358986,0.7934779656169436,1.4335647409228371,0.6694489101901375,"event ~ C(alt_state, Treatment(reference='fi_accumulation_only')) + age_baseline + male + education + fi_disease_min5_base + C(cohort)"
+HRS,fi_disease_complete6,8088,782,1.0665374040358986,0.7934779656169436,1.4335647409228371,0.6694489101901375,"event ~ C(alt_state, Treatment(reference='fi_accumulation_only')) + age_baseline + male + education + fi_disease_complete6_base + C(cohort)"

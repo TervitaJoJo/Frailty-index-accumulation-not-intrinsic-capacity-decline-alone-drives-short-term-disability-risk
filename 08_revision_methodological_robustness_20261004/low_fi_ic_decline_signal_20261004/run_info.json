@@ -1,0 +1,16 @@
+{
+  "script": "low_fi_ic_decline_signal_20261004.py",
+  "run_utc": "2026-10-04T04:42:53.038559+00:00",
+  "seed": 20261004,
+  "primary_low_fi_threshold": 0.125,
+  "cohorts": [
+    "ELSA",
+    "CHARLS",
+    "HRS"
+  ],
+  "n_low_fi_known_outcome": 5561,
+  "events_low_fi": 440,
+  "aggregate_only": true,
+  "script_sha256": "80e83537735e2f46798081b72d07d5538fae48b5257daf5d5c329bcc23aa94fa",
+  "package_relative_output": "code/08_revision_methodological_robustness_20261004/low_fi_ic_decline_signal_20261004"
+}

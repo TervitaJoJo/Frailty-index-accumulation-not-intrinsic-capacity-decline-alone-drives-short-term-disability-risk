@@ -1,0 +1,2 @@
+analysis,n,events,auc_base,auc_full,delta_auc,brier_base,brier_full,delta_brier,optimism_corrected_delta_auc,optimism_corrected_delta_brier,bootstrap_delta_auc_low,bootstrap_delta_auc_high,bootstrap_delta_brier_low,bootstrap_delta_brier_high,bootstrap_replicates
+nested_incremental_prediction_metrics,18525,2097,0.6919548013388636,0.692320974843304,0.00036617350444045904,0.09509435227150739,0.09503533337102281,-5.901890048458369e-05,-2.3642408459230457e-05,-3.24649080774243e-05,-0.0003194986832325386,0.00044917612195176647,-6.423760200571297e-05,-6.628116107039804e-06,400

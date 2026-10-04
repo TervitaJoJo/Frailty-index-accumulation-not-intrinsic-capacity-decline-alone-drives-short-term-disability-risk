@@ -1,0 +1,2 @@
+analysis,n,events,weighted_coupled_vs_preserved_OR,OR_low,OR_high,p,formula
+survey_weighted_state_sensitivity,19782,1851,1.3765286271267052,1.1885353479217322,1.5942572213881778,1.9959885196253137e-05,"event ~ C(state, Treatment(reference='preserved_low')) + age_baseline + male + education + baseline_fi + C(cohort)"

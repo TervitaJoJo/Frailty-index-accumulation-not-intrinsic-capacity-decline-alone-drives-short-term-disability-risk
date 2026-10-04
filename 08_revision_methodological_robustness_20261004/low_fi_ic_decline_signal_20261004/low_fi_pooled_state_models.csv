@@ -1,0 +1,5 @@
+analysis,baseline_fi_band,contrast,n,events,OR,OR_low,OR_high,p,formula
+low_fi_pooled_state_model,<0.125,ic_decline_only vs preserved_low,5561,440,0.9178026377736181,0.6332801679578679,1.3301564213207033,0.6505150915279043,"event ~ C(state, Treatment(reference='preserved_low')) + age_baseline + male + education + baseline_fi + C(cohort)"
+low_fi_pooled_state_model,<0.125,fi_accumulation_only vs preserved_low,5561,440,1.6537843750993528,1.179466199328859,2.318847933818731,0.0035330431936928582,"event ~ C(state, Treatment(reference='preserved_low')) + age_baseline + male + education + baseline_fi + C(cohort)"
+low_fi_pooled_state_model,<0.125,coupled vs preserved_low,5561,440,1.7079445327510463,1.2354598115680853,2.361124578590497,0.0011967896264209422,"event ~ C(state, Treatment(reference='preserved_low')) + age_baseline + male + education + baseline_fi + C(cohort)"
+low_fi_pooled_state_model,<0.125,coupled vs fi_accumulation_only,5561,440,2.824571981800045,1.525490931366722,5.22992743930767,0.0009545721715598095,"event ~ C(state, Treatment(reference='preserved_low')) + age_baseline + male + education + baseline_fi + C(cohort)"

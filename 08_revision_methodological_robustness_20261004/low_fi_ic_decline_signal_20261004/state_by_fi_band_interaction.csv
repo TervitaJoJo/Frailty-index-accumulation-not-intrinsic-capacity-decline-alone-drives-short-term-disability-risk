@@ -1,0 +1,2 @@
+analysis,n,events,likelihood_ratio,df,p,main_formula,full_formula
+state_by_baseline_fi_band_interaction,18525,2097,8.430243066195544,6,0.20824590658480369,"event ~ C(state, Treatment(reference='preserved_low')) + C(baseline_fi_band) + age_baseline + male + education + baseline_fi + C(cohort)","event ~ C(state, Treatment(reference='preserved_low')) * C(baseline_fi_band) + age_baseline + male + education + baseline_fi + C(cohort)"

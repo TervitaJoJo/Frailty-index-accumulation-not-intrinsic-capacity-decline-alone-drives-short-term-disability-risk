@@ -1,0 +1,821 @@
+[
+  {
+    "path": "00_metadata/analysis_manifest_v1.json",
+    "folder": "00_metadata",
+    "file": "analysis_manifest_v1.json",
+    "bytes": 2939,
+    "sha256": "27b5544cf1042b5e012475ca92708c80feb9fb8ab00774db5cf787114a73782c"
+  },
+  {
+    "path": "00_metadata/analysis_manifest_v2_scheme_a_share_decision.json",
+    "folder": "00_metadata",
+    "file": "analysis_manifest_v2_scheme_a_share_decision.json",
+    "bytes": 3264,
+    "sha256": "735ff97d21b47f6b8ff6e3407d98c8f4dd1a29d874f36812f87c577e1b8481b1"
+  },
+  {
+    "path": "00_metadata/observed_proxy_final_specification_manifest.json",
+    "folder": "00_metadata",
+    "file": "observed_proxy_final_specification_manifest.json",
+    "bytes": 21249,
+    "sha256": "dcae08e91ce4dd5ae4e8a17beccd75c1dbabe3a56ce5488bd001580cb7a6b964"
+  },
+  {
+    "path": "00_metadata/source_manifest.json",
+    "folder": "00_metadata",
+    "file": "source_manifest.json",
+    "bytes": 2007,
+    "sha256": "7c7e7b927a36a71291171175aab6040f6baa4c59e35a5f391099fa5b31726602"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/01_metadata_audit.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "01_metadata_audit.py",
+    "bytes": 5831,
+    "sha256": "abbe2609b35d25aaf94806e1316245049f2c8f8093100c2fadb804f871bcf849"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/02_exploratory_profiles.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "02_exploratory_profiles.py",
+    "bytes": 28568,
+    "sha256": "63f5c3ff4f2d752937cd76401d21483d2defc0fbf6b594ecbafa8a0e6ffe78de"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/04_existing_frailty_component_audit.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "04_existing_frailty_component_audit.py",
+    "bytes": 3757,
+    "sha256": "0966b6ea0fb0393ae9383920123f7dad7819bf68809d3dd62a03016113fc0509"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/05_haalSI_supplement.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "05_haalSI_supplement.py",
+    "bytes": 3035,
+    "sha256": "7d596d31bbff3c23c16e08229c4c6b7e8394597f2a42cc96fa7e5a6dd9f2efa6"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/06_value_label_audit.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "06_value_label_audit.py",
+    "bytes": 3840,
+    "sha256": "df2fa237f5aebfd9ab8183537b3da3269658e6aa7091b458b1b3c62e55dd2091"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/07_harmonization_blueprint.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "07_harmonization_blueprint.py",
+    "bytes": 15454,
+    "sha256": "039ba438e8b1536add06b4e05be622f26df9a4d2fe986b1fc60fb4ac7c1ab010"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/08_frailty_candidate_inventory.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "08_frailty_candidate_inventory.py",
+    "bytes": 11133,
+    "sha256": "7663f62b21cc40d96d68ae8d5a6adc77dc3f270153b61160ac126f1591d1b1bd"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/09_share_cognitive_remerge_audit.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "09_share_cognitive_remerge_audit.py",
+    "bytes": 5725,
+    "sha256": "6ccc417f27343b99a776b69f5298d83ef2065fdcde7f8e4327c2c8883f3202df"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/10_charls_cognitive_audit.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "10_charls_cognitive_audit.py",
+    "bytes": 4847,
+    "sha256": "f859f6bcff49328dd70b2abefe2cb95f324db42f57b4ea6bb2d0c38ece02c57e"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/11_share_cognitive_mi_summary.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "11_share_cognitive_mi_summary.py",
+    "bytes": 6446,
+    "sha256": "177c4d4236dae7789c209b7d0f80c20ac80686bd693a840b723df12120aba85e"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/12_frailty_core_coverage.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "12_frailty_core_coverage.py",
+    "bytes": 6736,
+    "sha256": "d6409932ed83ea2726166499c6e325861efa4191de74c0cbfdd55d55797f6bd1"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/13_analysis_manifest.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "13_analysis_manifest.py",
+    "bytes": 4062,
+    "sha256": "96380833d4f8a10734b42a6753112f3596c5200c7b9858ace7f1f3a812a2ade3"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/14_measurement_direction_audit.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "14_measurement_direction_audit.py",
+    "bytes": 5851,
+    "sha256": "5baefd44e9ceda831e14ee37840cb659261c8595661d7cbcef52ed3edd6b3ba0"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/15_anchor_wave_feasibility.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "15_anchor_wave_feasibility.py",
+    "bytes": 10313,
+    "sha256": "33f3fbe4650107a766c5d2c8fe91a27db6ee270127f17d52359179335f2f9e49"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/17_cognition_indicator_audit.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "17_cognition_indicator_audit.py",
+    "bytes": 4442,
+    "sha256": "e935d559bce3e18f334cd6cf56109b3f95aa8a83ea63b9bbb8105fd5d2181020"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/18_frailty_coding_audit.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "18_frailty_coding_audit.py",
+    "bytes": 6564,
+    "sha256": "2a7bb5ca735871b27ff86a3a591be473bb227208f293e2b2893ca2e6ddbf61ae"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/19_anchor_measurement_manifest.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "19_anchor_measurement_manifest.py",
+    "bytes": 4174,
+    "sha256": "2935468f76fc45cd11b5c9e43830c683a1167b1d9a7ca9f37c08d1d69f7a6fb2"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/20_frailty_score_audit.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "20_frailty_score_audit.py",
+    "bytes": 7050,
+    "sha256": "5e3512eefcc147262521254183c677d408e7513448f957654f70e893e1a382e3"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/21_anchor_construct_profiles.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "21_anchor_construct_profiles.py",
+    "bytes": 8154,
+    "sha256": "149e9cd80c5f42522c475083a39ded3f31f1383792c559d1f9fd4af1934e6c5d"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/22_anchor_source_audit.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "22_anchor_source_audit.py",
+    "bytes": 16841,
+    "sha256": "5a834065b735c20ec521227059fb9617540b8a7e663cd932af2aa2ccb3139476"
+  },
+  {
+    "path": "01_harmonisation_and_cohort_audits/23_domain_indicator_audit.py",
+    "folder": "01_harmonisation_and_cohort_audits",
+    "file": "23_domain_indicator_audit.py",
+    "bytes": 15135,
+    "sha256": "b7ab5c6e18a561a44f82f0a354e2718b69bfbb5a03d0edef4bcb714ef67c324e"
+  },
+  {
+    "path": "02_measurement_and_fi_validation/24_scheme_a_cfa_template.R",
+    "folder": "02_measurement_and_fi_validation",
+    "file": "24_scheme_a_cfa_template.R",
+    "bytes": 3545,
+    "sha256": "5649d5434ed5f2aa1fba7607421924db98a4c6668c42a2c4eca0eea1c3b1dcf0"
+  },
+  {
+    "path": "02_measurement_and_fi_validation/25_pilot_within_cohort_cfa.R",
+    "folder": "02_measurement_and_fi_validation",
+    "file": "25_pilot_within_cohort_cfa.R",
+    "bytes": 5994,
+    "sha256": "f63a8269a6ccbb0e62356f60cfb897377336cea48db01fe48e9e711eccb21d77"
+  },
+  {
+    "path": "02_measurement_and_fi_validation/26_hrs_share_domain_cfa.R",
+    "folder": "02_measurement_and_fi_validation",
+    "file": "26_hrs_share_domain_cfa.R",
+    "bytes": 14967,
+    "sha256": "2c3e5016946bcd0844d35c4c96fd0bb96d1d59fbf0b1c26475df028eea144ec9"
+  },
+  {
+    "path": "02_measurement_and_fi_validation/26_prepare_share_path.py",
+    "folder": "02_measurement_and_fi_validation",
+    "file": "26_prepare_share_path.py",
+    "bytes": 1627,
+    "sha256": "57cbc292da4ce1522fb5013097804e134f32b1ec39605aa7e8abaabbbe727108"
+  },
+  {
+    "path": "02_measurement_and_fi_validation/27_share_mobility_composite_audit.py",
+    "folder": "02_measurement_and_fi_validation",
+    "file": "27_share_mobility_composite_audit.py",
+    "bytes": 2525,
+    "sha256": "279e79f5fb7c11cfb3bbf4e34054946d03dc2536fc49f1328a0aeb70320e20eb"
+  },
+  {
+    "path": "02_measurement_and_fi_validation/28_hrs_grip_module_audit.py",
+    "folder": "02_measurement_and_fi_validation",
+    "file": "28_hrs_grip_module_audit.py",
+    "bytes": 5489,
+    "sha256": "4ce73bef973388f91ebe82783ccd8b378ab2fa522d613f13ab07a3eaa08a7957"
+  },
+  {
+    "path": "02_measurement_and_fi_validation/29_domain_reliability_audit.R",
+    "folder": "02_measurement_and_fi_validation",
+    "file": "29_domain_reliability_audit.R",
+    "bytes": 21658,
+    "sha256": "b88027ebebea51cf2b3dc2948f41e7a91868317ec144c3fc99a9f15a47c96bc8"
+  },
+  {
+    "path": "02_measurement_and_fi_validation/30_domain_level_alignment_audit.R",
+    "folder": "02_measurement_and_fi_validation",
+    "file": "30_domain_level_alignment_audit.R",
+    "bytes": 7814,
+    "sha256": "7655526720b29d4954c1799eb2fae63d8c544d54427e0399109f139947677d64"
+  },
+  {
+    "path": "02_measurement_and_fi_validation/31_correlated_domain_structure_audit.py",
+    "folder": "02_measurement_and_fi_validation",
+    "file": "31_correlated_domain_structure_audit.py",
+    "bytes": 2665,
+    "sha256": "09f5b9554ea19361398e9dee6e60be51efea4193e41e76d992a8485824b7d724"
+  },
+  {
+    "path": "02_measurement_and_fi_validation/32_ic_fi_incremental_validity_audit.R",
+    "folder": "02_measurement_and_fi_validation",
+    "file": "32_ic_fi_incremental_validity_audit.R",
+    "bytes": 6887,
+    "sha256": "0fd97e200ee8d137d1003ddf46484fe4b89a9143339b9e889395c0d638612ea8"
+  },
+  {
+    "path": "02_measurement_and_fi_validation/33_latent_domain_fi_sem_audit.R",
+    "folder": "02_measurement_and_fi_validation",
+    "file": "33_latent_domain_fi_sem_audit.R",
+    "bytes": 7012,
+    "sha256": "b6e94553d34a32d9cd632f8a714bf342a5e27a2c081928814c2864ed9e314ee7"
+  },
+  {
+    "path": "02_measurement_and_fi_validation/34_structural_missingness_sensitivity.R",
+    "folder": "02_measurement_and_fi_validation",
+    "file": "34_structural_missingness_sensitivity.R",
+    "bytes": 7736,
+    "sha256": "c7970b8678c36faeb0aa5a311d81cb34e0c5c540bc28a29cd626de1b091a6c89"
+  },
+  {
+    "path": "02_measurement_and_fi_validation/35_cross_cohort_coefficient_comparison.py",
+    "folder": "02_measurement_and_fi_validation",
+    "file": "35_cross_cohort_coefficient_comparison.py",
+    "bytes": 3404,
+    "sha256": "eea59e086cd7a1a9ed5987abfbd6bac32d829d1b17a8a2a2467f2a065182a3f5"
+  },
+  {
+    "path": "02_measurement_and_fi_validation/36_build_exploratory_main_results.py",
+    "folder": "02_measurement_and_fi_validation",
+    "file": "36_build_exploratory_main_results.py",
+    "bytes": 2716,
+    "sha256": "af1ae1c3486ec11e989f360f89f026a4833dea31eb699911ca30cceaf6e9be5e"
+  },
+  {
+    "path": "02_measurement_and_fi_validation/40_cross_cohort_raw_invariance_audit.R",
+    "folder": "02_measurement_and_fi_validation",
+    "file": "40_cross_cohort_raw_invariance_audit.R",
+    "bytes": 13572,
+    "sha256": "06439239f7620db641041201e508ecacdf68acf0ad19fdf5b8df193aa326387d"
+  },
+  {
+    "path": "02_measurement_and_fi_validation/41_partial_scalar_invariance.R",
+    "folder": "02_measurement_and_fi_validation",
+    "file": "41_partial_scalar_invariance.R",
+    "bytes": 6628,
+    "sha256": "d565a7927ae0a2571cfab3c521865b5d03dca1621e476259154e2c5820df0ba4"
+  },
+  {
+    "path": "02_measurement_and_fi_validation/42_cross_cohort_partial_metric_sem.R",
+    "folder": "02_measurement_and_fi_validation",
+    "file": "42_cross_cohort_partial_metric_sem.R",
+    "bytes": 9178,
+    "sha256": "2125a322afb63bab263c1c6b3e8ecaf4738bd8e0a04d9fcc983a608ce71b894a"
+  },
+  {
+    "path": "02_measurement_and_fi_validation/43_cross_cohort_fi_sensitivity.R",
+    "folder": "02_measurement_and_fi_validation",
+    "file": "43_cross_cohort_fi_sensitivity.R",
+    "bytes": 6094,
+    "sha256": "6bbbb011292644690d32893fa04b5a179a1b2ebd8fabb8eb8aea86b48895dea1"
+  },
+  {
+    "path": "02_measurement_and_fi_validation/45_build_measurement_gate_report.py",
+    "folder": "02_measurement_and_fi_validation",
+    "file": "45_build_measurement_gate_report.py",
+    "bytes": 9978,
+    "sha256": "3508691350e20b47855b77606de9518407e333613ec1aaa54402922d2eeb0ae3"
+  },
+  {
+    "path": "03_primary_analysis_and_evidence/47_final_reproducibility_check.py",
+    "folder": "03_primary_analysis_and_evidence",
+    "file": "47_final_reproducibility_check.py",
+    "bytes": 4851,
+    "sha256": "1bc8ede72a6baa4eb739695d41eed802ad5f0ab32cfeca62b2f7893492d4c1eb"
+  },
+  {
+    "path": "03_primary_analysis_and_evidence/48_share_external_composite_audit.py",
+    "folder": "03_primary_analysis_and_evidence",
+    "file": "48_share_external_composite_audit.py",
+    "bytes": 11521,
+    "sha256": "61bca8b2c8574b3a63b65289de500c7d51af299c2db8c460f08994da5e11950c"
+  },
+  {
+    "path": "03_primary_analysis_and_evidence/49_survey_weight_missingness_audit.py",
+    "folder": "03_primary_analysis_and_evidence",
+    "file": "49_survey_weight_missingness_audit.py",
+    "bytes": 36279,
+    "sha256": "195f0d03ae9db8c60854974017b6d6666e104b8f3bea7596d74c8f0700bee565"
+  },
+  {
+    "path": "03_primary_analysis_and_evidence/50_design_weighted_sensitivity.py",
+    "folder": "03_primary_analysis_and_evidence",
+    "file": "50_design_weighted_sensitivity.py",
+    "bytes": 11658,
+    "sha256": "7c1132a3e139c40ee37f1988f2ee06f8cac36ca1c124d42e50b3e68fa723fe73"
+  },
+  {
+    "path": "03_primary_analysis_and_evidence/51_observed_proxy_weighted_regression.py",
+    "folder": "03_primary_analysis_and_evidence",
+    "file": "51_observed_proxy_weighted_regression.py",
+    "bytes": 3165,
+    "sha256": "fb059be46dd6b9c1718aee4f8a48b65a4b2b630b62d3a0d50c809c1da7d52e9c"
+  },
+  {
+    "path": "03_primary_analysis_and_evidence/53_longitudinal_predictive_feasibility.py",
+    "folder": "03_primary_analysis_and_evidence",
+    "file": "53_longitudinal_predictive_feasibility.py",
+    "bytes": 14548,
+    "sha256": "43f3bdcd1a38a88d53a28e759fd4c55e1895f14e5f9faaee55957d19deee2271"
+  },
+  {
+    "path": "03_primary_analysis_and_evidence/54_longitudinal_predictive_screen.py",
+    "folder": "03_primary_analysis_and_evidence",
+    "file": "54_longitudinal_predictive_screen.py",
+    "bytes": 17495,
+    "sha256": "848627d3c75d48f5349c6e45a01daabe11bb2b1687ad41c7bdcc464b989cc9bd"
+  },
+  {
+    "path": "03_primary_analysis_and_evidence/55_latent_longitudinal_predictive_sem.R",
+    "folder": "03_primary_analysis_and_evidence",
+    "file": "55_latent_longitudinal_predictive_sem.R",
+    "bytes": 15740,
+    "sha256": "351299263c0b3b5fa2c8f2f075806c8e5cf54f914e8e7a107759135403cfffab"
+  },
+  {
+    "path": "03_primary_analysis_and_evidence/57_longitudinal_direction_comparison.py",
+    "folder": "03_primary_analysis_and_evidence",
+    "file": "57_longitudinal_direction_comparison.py",
+    "bytes": 2865,
+    "sha256": "4d0a2b246428c70472fec0b359012fcc4f1d4e5b675d2ed7f12751a9e5517067"
+  },
+  {
+    "path": "03_primary_analysis_and_evidence/58_latent_longitudinal_mlr_sensitivity.R",
+    "folder": "03_primary_analysis_and_evidence",
+    "file": "58_latent_longitudinal_mlr_sensitivity.R",
+    "bytes": 15354,
+    "sha256": "373b49bbdb10cea40e9247b4a10c39d757963fb549ffe0b1ea0ca1a34011cc20"
+  },
+  {
+    "path": "03_primary_analysis_and_evidence/59_estimator_sensitivity_summary.py",
+    "folder": "03_primary_analysis_and_evidence",
+    "file": "59_estimator_sensitivity_summary.py",
+    "bytes": 1332,
+    "sha256": "05abae05b69355abad242867d7b4017e4e12e3e737583cc4d245b1f654c590f2"
+  },
+  {
+    "path": "03_primary_analysis_and_evidence/60_longitudinal_fi_definition_sensitivity.py",
+    "folder": "03_primary_analysis_and_evidence",
+    "file": "60_longitudinal_fi_definition_sensitivity.py",
+    "bytes": 19088,
+    "sha256": "2b19f5ce0a6e09105bc8f010aa4c37e78c45a3eed72df176a53474bbe5788d7e"
+  },
+  {
+    "path": "04_sensitivity_prediction_and_validation/63_missingness_weighted_longitudinal_sensitivity.py",
+    "folder": "04_sensitivity_prediction_and_validation",
+    "file": "63_missingness_weighted_longitudinal_sensitivity.py",
+    "bytes": 22356,
+    "sha256": "6e37d91290a4fd626be10e8eac8e4bed456983b3bec63a644ab595accb3c176f"
+  },
+  {
+    "path": "04_sensitivity_prediction_and_validation/66_incident_disability_prediction.py",
+    "folder": "04_sensitivity_prediction_and_validation",
+    "file": "66_incident_disability_prediction.py",
+    "bytes": 34633,
+    "sha256": "24eb375e184b32f3d763ab7071a0e3a6729ce3dcf69e0b86120972e918adab0b"
+  },
+  {
+    "path": "04_sensitivity_prediction_and_validation/67_partial_metric_factor_disability.R",
+    "folder": "04_sensitivity_prediction_and_validation",
+    "file": "67_partial_metric_factor_disability.R",
+    "bytes": 13003,
+    "sha256": "a708f39ea3c78fdd04dc9ce6fba6a1ebfb967b22683157264221b0fd8cd62757"
+  },
+  {
+    "path": "04_sensitivity_prediction_and_validation/68_leave_one_cohort_out_disability_validation.py",
+    "folder": "04_sensitivity_prediction_and_validation",
+    "file": "68_leave_one_cohort_out_disability_validation.py",
+    "bytes": 15267,
+    "sha256": "5ad2a580f9d3d3d4bb7b0aad1173f1d3a9ba6c990e175f5a7db1e41d2f71e88e"
+  },
+  {
+    "path": "04_sensitivity_prediction_and_validation/69_internal_bootstrap_optimism_disability.py",
+    "folder": "04_sensitivity_prediction_and_validation",
+    "file": "69_internal_bootstrap_optimism_disability.py",
+    "bytes": 7670,
+    "sha256": "64a1e9cc10883325a0b8f2f2f643715d191a78705b325a6893b040924d9d0f71"
+  },
+  {
+    "path": "04_sensitivity_prediction_and_validation/70_disability_missingness_ipw_sensitivity.py",
+    "folder": "04_sensitivity_prediction_and_validation",
+    "file": "70_disability_missingness_ipw_sensitivity.py",
+    "bytes": 10334,
+    "sha256": "ba74585bf96c6d3feae0f8eee7dd457908e72127d808db277b324099050c5e48"
+  },
+  {
+    "path": "04_sensitivity_prediction_and_validation/71_mortality_competing_event_sensitivity.py",
+    "folder": "04_sensitivity_prediction_and_validation",
+    "file": "71_mortality_competing_event_sensitivity.py",
+    "bytes": 14908,
+    "sha256": "028e88f6a9684574afbbe708ae568ac02cc2114a49a112b16b374d68fcfb1c8a"
+  },
+  {
+    "path": "04_sensitivity_prediction_and_validation/72_mcid_dca_exploration.py",
+    "folder": "04_sensitivity_prediction_and_validation",
+    "file": "72_mcid_dca_exploration.py",
+    "bytes": 23552,
+    "sha256": "dc058b3d6f4f614a3d7ec0bc8ab8d7624ff134e268a3a0062f900971a06da529"
+  },
+  {
+    "path": "04_sensitivity_prediction_and_validation/73_cross_cohort_calibration_risk_stratification.py",
+    "folder": "04_sensitivity_prediction_and_validation",
+    "file": "73_cross_cohort_calibration_risk_stratification.py",
+    "bytes": 13046,
+    "sha256": "5618a318b983e952275e93aa33269eca782539b572615d4af766b556d9bb559c"
+  },
+  {
+    "path": "04_sensitivity_prediction_and_validation/74_robustness_gate_report.py",
+    "folder": "04_sensitivity_prediction_and_validation",
+    "file": "74_robustness_gate_report.py",
+    "bytes": 20354,
+    "sha256": "48530e45679d30ca82ab3b0bbd7369b213e80da7ca28255c15a9ea76f7b5baac"
+  },
+  {
+    "path": "04_sensitivity_prediction_and_validation/75_paired_delta_bootstrap_latent.R",
+    "folder": "04_sensitivity_prediction_and_validation",
+    "file": "75_paired_delta_bootstrap_latent.R",
+    "bytes": 2443,
+    "sha256": "876b54cc2da16f1824d3075c33950c87bb2b828b95a7e25f9f4b092eb384f833"
+  },
+  {
+    "path": "04_sensitivity_prediction_and_validation/75_paired_delta_bootstrap_proxy.py",
+    "folder": "04_sensitivity_prediction_and_validation",
+    "file": "75_paired_delta_bootstrap_proxy.py",
+    "bytes": 3921,
+    "sha256": "c1b1741f44983ad5bab104cf6de482d535f756bf8dbf54f729ac74d70e17cd9d"
+  },
+  {
+    "path": "04_sensitivity_prediction_and_validation/76_ordinal_mi_longitudinal_sensitivity.R",
+    "folder": "04_sensitivity_prediction_and_validation",
+    "file": "76_ordinal_mi_longitudinal_sensitivity.R",
+    "bytes": 18471,
+    "sha256": "6ad0872831bb4ec9af2a8fb8246280689f3e964ac954a302fd9b3e155d5b13eb"
+  },
+  {
+    "path": "04_sensitivity_prediction_and_validation/78_audit_disability_item_availability.py",
+    "folder": "04_sensitivity_prediction_and_validation",
+    "file": "78_audit_disability_item_availability.py",
+    "bytes": 916,
+    "sha256": "0b42b1a0a7672a15cd17e6317b8a0ecfdbb64b469d727a839d8ea8fae639a72f"
+  },
+  {
+    "path": "04_sensitivity_prediction_and_validation/79_audit_disability_item_values.py",
+    "folder": "04_sensitivity_prediction_and_validation",
+    "file": "79_audit_disability_item_values.py",
+    "bytes": 1584,
+    "sha256": "9d172474c3413fdc78c4e781fa4a3b517342bbabdd732d1045bb45c9aefe03c7"
+  },
+  {
+    "path": "04_sensitivity_prediction_and_validation/81_ordinal_mi_disability_sensitivity.R",
+    "folder": "04_sensitivity_prediction_and_validation",
+    "file": "81_ordinal_mi_disability_sensitivity.R",
+    "bytes": 17629,
+    "sha256": "be311aa09c7fa8333030ac7f2859911a4ada0c3479db6747c01daaacb5e69990"
+  },
+  {
+    "path": "05_mechanism_and_external_extensions/charls_inflammatory_metabolic_pathway_20261003.py",
+    "folder": "05_mechanism_and_external_extensions",
+    "file": "charls_inflammatory_metabolic_pathway_20261003.py",
+    "bytes": 14014,
+    "sha256": "69b7f11809edea51c2d165748c000b7f9a10dee277470278ba3f4a6c0d3b1a1d"
+  },
+  {
+    "path": "05_mechanism_and_external_extensions/coupled_vs_fi_only_disability_contrast_all_thresholds.csv",
+    "folder": "05_mechanism_and_external_extensions",
+    "file": "coupled_vs_fi_only_disability_contrast_all_thresholds.csv",
+    "bytes": 5587,
+    "sha256": "9e62fc7d9f4910c1fa9b5ed3e7297f8ca5a65b81afa6e84c792bae24a969396b"
+  },
+  {
+    "path": "05_mechanism_and_external_extensions/coupled_vs_fi_only_disability_contrast_manifest.json",
+    "folder": "05_mechanism_and_external_extensions",
+    "file": "coupled_vs_fi_only_disability_contrast_manifest.json",
+    "bytes": 1034,
+    "sha256": "fb23a10f069fe666b557527ab26e9660bd36dfdb23a6e9f3731ce8eec4b7745e"
+  },
+  {
+    "path": "05_mechanism_and_external_extensions/coupled_vs_fi_only_incremental_contrast_20261003.py",
+    "folder": "05_mechanism_and_external_extensions",
+    "file": "coupled_vs_fi_only_incremental_contrast_20261003.py",
+    "bytes": 6502,
+    "sha256": "d78599b36f73be5e07eb42a63d20dedd70b3540523c0cfb0dcb11fd97fa3dab8"
+  },
+  {
+    "path": "05_mechanism_and_external_extensions/coupled_vs_fi_only_state_risks_all_thresholds.csv",
+    "folder": "05_mechanism_and_external_extensions",
+    "file": "coupled_vs_fi_only_state_risks_all_thresholds.csv",
+    "bytes": 12594,
+    "sha256": "a1c1f260aa7be01b33f1d866aa8773c617d3248e803b584805b3426a92fe3880"
+  },
+  {
+    "path": "05_mechanism_and_external_extensions/coupled_vs_fi_only_threshold_definitions.csv",
+    "folder": "05_mechanism_and_external_extensions",
+    "file": "coupled_vs_fi_only_threshold_definitions.csv",
+    "bytes": 2423,
+    "sha256": "2e5bb3d877f3c8283c003a6c98441cedeef0abe29a666a89f0cb43e0f91c5a31"
+  },
+  {
+    "path": "05_mechanism_and_external_extensions/directional_conditional_analyses_20261002.py",
+    "folder": "05_mechanism_and_external_extensions",
+    "file": "directional_conditional_analyses_20261002.py",
+    "bytes": 20997,
+    "sha256": "238b72c1c361eb154672da20c27166ae6276f9d70ad2aba54de5f2b94b675457"
+  },
+  {
+    "path": "05_mechanism_and_external_extensions/elsa_inflammatory_metabolic_pathway_20261003.py",
+    "folder": "05_mechanism_and_external_extensions",
+    "file": "elsa_inflammatory_metabolic_pathway_20261003.py",
+    "bytes": 11625,
+    "sha256": "6083a7a3773598c1fce851d73f1786167e6292a4553f7a510509a8a3dab13925"
+  },
+  {
+    "path": "05_mechanism_and_external_extensions/joint_trajectory_state_transition_analysis_20260930.py",
+    "folder": "05_mechanism_and_external_extensions",
+    "file": "joint_trajectory_state_transition_analysis_20260930.py",
+    "bytes": 24089,
+    "sha256": "27d27d08a626ebeaf8bad184fae24286b38ccd08cfa6ded857f23bcba137909d"
+  },
+  {
+    "path": "05_mechanism_and_external_extensions/mechanism_robustness_audit_20261003.py",
+    "folder": "05_mechanism_and_external_extensions",
+    "file": "mechanism_robustness_audit_20261003.py",
+    "bytes": 9519,
+    "sha256": "722de77081b15d83bf0c719d6a9fd7c0ba989e32c98a452cefc05df6621f8d8d"
+  },
+  {
+    "path": "05_mechanism_and_external_extensions/share_four_state_validation_20261003.py",
+    "folder": "05_mechanism_and_external_extensions",
+    "file": "share_four_state_validation_20261003.py",
+    "bytes": 9710,
+    "sha256": "5830411d33adca4f71db040df4782c246743d3be8b1372915362d1d114f3e713"
+  },
+  {
+    "path": "06_figure_generation/dotci_base.py",
+    "folder": "06_figure_generation",
+    "file": "dotci_base.py",
+    "bytes": 3223,
+    "sha256": "f6f55ff76e90afeb348f9437bce8557463ffce0c00d40ca7c96d4143a11b4ad5"
+  },
+  {
+    "path": "06_figure_generation/figure1_study_design.py",
+    "folder": "06_figure_generation",
+    "file": "figure1_study_design.py",
+    "bytes": 5004,
+    "sha256": "4c0c3495516c04d3beada3637d620fc57d640150702f3af9ca8bbf1fb99cf05d"
+  },
+  {
+    "path": "06_figure_generation/figure2_development_effects.py",
+    "folder": "06_figure_generation",
+    "file": "figure2_development_effects.py",
+    "bytes": 3380,
+    "sha256": "6607d227d4ae685fd7491b082dea405016a4a9e246c5cd41680a79c49079e0f5"
+  },
+  {
+    "path": "06_figure_generation/figure3_external_and_FI_risk.py",
+    "folder": "06_figure_generation",
+    "file": "figure3_external_and_FI_risk.py",
+    "bytes": 3693,
+    "sha256": "5c34a2d19dd2fd39cced6570123fdaab09d9c87b28e4a0b6be7fb5ab68c38333"
+  },
+  {
+    "path": "06_figure_generation/final_supplementary_figures_20261004.py",
+    "folder": "06_figure_generation",
+    "file": "final_supplementary_figures_20261004.py",
+    "bytes": 12245,
+    "sha256": "110514af1cbd5b771c1a72957231e1888fff5b2d2208bec18a9e22bde3eb0306"
+  },
+  {
+    "path": "06_figure_generation/forest_base.py",
+    "folder": "06_figure_generation",
+    "file": "forest_base.py",
+    "bytes": 4449,
+    "sha256": "e17ab634542e965eb1a2972ef38f678f3fcdb1592e8d7d5b281a5c31ca568732"
+  },
+  {
+    "path": "06_figure_generation/sankey_base.py",
+    "folder": "06_figure_generation",
+    "file": "sankey_base.py",
+    "bytes": 7655,
+    "sha256": "f5a6f75a166fdad6fb7bbf919fad4f8a1cace33d8d9239b171a9454959a0fb99"
+  },
+  {
+    "path": "07_auxiliary_and_reproducibility/_audit_elsa_working_columns.py",
+    "folder": "07_auxiliary_and_reproducibility",
+    "file": "_audit_elsa_working_columns.py",
+    "bytes": 507,
+    "sha256": "f88ac313f490ae7fb1f3462b0e67c0192299e1fbda979f086b3a854523de22c3"
+  },
+  {
+    "path": "07_auxiliary_and_reproducibility/_audit_longitudinal_columns.py",
+    "folder": "07_auxiliary_and_reproducibility",
+    "file": "_audit_longitudinal_columns.py",
+    "bytes": 1184,
+    "sha256": "87231825da6789e7c2e057300b68fe566cfa03b4bf033f4f85f195e9f8cce08b"
+  },
+  {
+    "path": "07_auxiliary_and_reproducibility/_audit_longitudinal_columns2.py",
+    "folder": "07_auxiliary_and_reproducibility",
+    "file": "_audit_longitudinal_columns2.py",
+    "bytes": 1074,
+    "sha256": "9b9440e5f0b25fa6f212643a828c2ecaaa1f155b5db56313b53526474460449b"
+  },
+  {
+    "path": "07_auxiliary_and_reproducibility/_patch_stage24.py",
+    "folder": "07_auxiliary_and_reproducibility",
+    "file": "_patch_stage24.py",
+    "bytes": 550,
+    "sha256": "9a273b4704b16e0005a5e788b4682c2a03e9fe265b058d075563b248d1b7e508"
+  },
+  {
+    "path": "07_auxiliary_and_reproducibility/_patch_stage24b.py",
+    "folder": "07_auxiliary_and_reproducibility",
+    "file": "_patch_stage24b.py",
+    "bytes": 1440,
+    "sha256": "99d97257e736702e03bf9b39d3351f6388c882c96338a06e9de885111483d326"
+  },
+  {
+    "path": "07_auxiliary_and_reproducibility/build_latent_proxy_summary.py",
+    "folder": "07_auxiliary_and_reproducibility",
+    "file": "build_latent_proxy_summary.py",
+    "bytes": 2330,
+    "sha256": "e184fca58db7265609d3c19fbe075af0e6759ec70562b24c407ff6b450650205"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/continuous_change_interaction.csv",
+    "folder": "08_revision_methodological_robustness_20261004",
+    "file": "continuous_change_interaction.csv",
+    "bytes": 795,
+    "sha256": "8fb898b021ba74c22c79c23c5d4a936cd9530b344519c87e75a5f0db48ec2615"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/fi_content_sensitivity.csv",
+    "folder": "08_revision_methodological_robustness_20261004",
+    "file": "fi_content_sensitivity.csv",
+    "bytes": 1573,
+    "sha256": "21bd531e8652a893e724a981ef1afcc6043739b71f34451a3be48f5648a9c25e"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/low_fi_ic_decline_signal_20261004/low_fi_cohort_state_models.csv",
+    "folder": "08_revision_methodological_robustness_20261004/low_fi_ic_decline_signal_20261004",
+    "file": "low_fi_cohort_state_models.csv",
+    "bytes": 2183,
+    "sha256": "5acd1d7a45941ebe5429fb4e3e8eb493ccf2e8f0b2373a564cf34c7d68e8b651"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/low_fi_ic_decline_signal_20261004/low_fi_ic_decline_signal_20261004.py",
+    "folder": "08_revision_methodological_robustness_20261004/low_fi_ic_decline_signal_20261004",
+    "file": "low_fi_ic_decline_signal_20261004.py",
+    "bytes": 8064,
+    "sha256": "80e83537735e2f46798081b72d07d5538fae48b5257daf5d5c329bcc23aa94fa"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/low_fi_ic_decline_signal_20261004/low_fi_ic_decline_signal_report_20261004.md",
+    "folder": "08_revision_methodological_robustness_20261004/low_fi_ic_decline_signal_20261004",
+    "file": "low_fi_ic_decline_signal_report_20261004.md",
+    "bytes": 3029,
+    "sha256": "7fede1760d851702a4766e9821a3dfe8c5b1328c165c69a5380ef8360a65ee1a"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/low_fi_ic_decline_signal_20261004/low_fi_pooled_state_models.csv",
+    "folder": "08_revision_methodological_robustness_20261004/low_fi_ic_decline_signal_20261004",
+    "file": "low_fi_pooled_state_models.csv",
+    "bytes": 1147,
+    "sha256": "ce522588c505011cbb863ba79c470c0c1e77f7cd66c5fb9de7798f69998609cb"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/low_fi_ic_decline_signal_20261004/low_fi_state_risks_all_bands.csv",
+    "folder": "08_revision_methodological_robustness_20261004/low_fi_ic_decline_signal_20261004",
+    "file": "low_fi_state_risks_all_bands.csv",
+    "bytes": 4994,
+    "sha256": "1e8f41d12f180bdd1e7750bd1330caf1967fd4492ce435ce784dc850888c8463"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/low_fi_ic_decline_signal_20261004/run_info.json",
+    "folder": "08_revision_methodological_robustness_20261004/low_fi_ic_decline_signal_20261004",
+    "file": "run_info.json",
+    "bytes": 522,
+    "sha256": "cdeef0e5ccb1f1dfbb604a9f595a82163c335769a9f977aeec136911a5338bbf"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/low_fi_ic_decline_signal_20261004/state_by_fi_band_interaction.csv",
+    "folder": "08_revision_methodological_robustness_20261004/low_fi_ic_decline_signal_20261004",
+    "file": "state_by_fi_band_interaction.csv",
+    "bytes": 435,
+    "sha256": "a100980aa1d9e30ef87a798f62ea4f21982e6d236c8c375ec1072a32bff62f73"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/low_fi_ic_decline_signal_20261004/state_by_fi_band_stratum_contrasts.csv",
+    "folder": "08_revision_methodological_robustness_20261004/low_fi_ic_decline_signal_20261004",
+    "file": "state_by_fi_band_stratum_contrasts.csv",
+    "bytes": 838,
+    "sha256": "d8e726e22171acb705371373bce4189ca2e7da5d09afffbecdb0dee8a9b6d2de"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/nested_incremental_prediction_bootstrap.csv",
+    "folder": "08_revision_methodological_robustness_20261004",
+    "file": "nested_incremental_prediction_bootstrap.csv",
+    "bytes": 38470,
+    "sha256": "036aabb811d98382dd1a7bf5b570d888fa67ffa6833276686e0e88e933414dd7"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/nested_incremental_prediction_metrics.csv",
+    "folder": "08_revision_methodological_robustness_20261004",
+    "file": "nested_incremental_prediction_metrics.csv",
+    "bytes": 579,
+    "sha256": "e40f6f06ea2ab61463b2360b1fe1a5f638dac89a7db83c12c8344617526d9e17"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/nested_incremental_state_model.csv",
+    "folder": "08_revision_methodological_robustness_20261004",
+    "file": "nested_incremental_state_model.csv",
+    "bytes": 546,
+    "sha256": "08162bf661914ea68e6fe76a2cebcf3fd5fd157407c33728b4e872e3be69de9d"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/revision_analysis_report_20261004.md",
+    "folder": "08_revision_methodological_robustness_20261004",
+    "file": "revision_analysis_report_20261004.md",
+    "bytes": 4187,
+    "sha256": "17556243a9c2f2aef9826bc0646359d10564478692afec8ee619fdc13c423f1e"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/revision_data.py",
+    "folder": "08_revision_methodological_robustness_20261004",
+    "file": "revision_data.py",
+    "bytes": 12008,
+    "sha256": "bc25776dfea204da1ebbdf74770e6d1014f5054b5381c92137332e908d6d1e4a"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/revision_methodological_robustness_20261004.py",
+    "folder": "08_revision_methodological_robustness_20261004",
+    "file": "revision_methodological_robustness_20261004.py",
+    "bytes": 17450,
+    "sha256": "cb67e8521a7115efd922fb23485a3d616a9913d64347060cec55a36fb61cb2d7"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/run_info.json",
+    "folder": "08_revision_methodological_robustness_20261004",
+    "file": "run_info.json",
+    "bytes": 580,
+    "sha256": "81812ddc2288ecfe4339381b6ff7b9fecc55420c1dd1bc30f4bd2451406a9321"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/survey_weighted_state_model.csv",
+    "folder": "08_revision_methodological_robustness_20261004",
+    "file": "survey_weighted_state_model.csv",
+    "bytes": 320,
+    "sha256": "436526a4c6276298a761a70a0f094e602d8c3c3fb0a74cb6223c2fd0c6c4dceb"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/survey_weighted_state_risks.csv",
+    "folder": "08_revision_methodological_robustness_20261004",
+    "file": "survey_weighted_state_risks.csv",
+    "bytes": 1108,
+    "sha256": "0e4616288ee5dbdd1ea1b4cfed2e283191d39dcdd0dd6305da45d2916dfb300d"
+  },
+  {
+    "path": "08_revision_methodological_robustness_20261004/trajectory_states_analysis_20260930.py",
+    "folder": "08_revision_methodological_robustness_20261004",
+    "file": "trajectory_states_analysis_20260930.py",
+    "bytes": 25310,
+    "sha256": "922c153de5a7d28dff957251e2e654a2488d28e362b6e71b34ecd6f5972beebb"
+  },
+  {
+    "path": "README.md",
+    "folder": ".",
+    "file": "README.md",
+    "bytes": 1897,
+    "sha256": "f5696935f9a780fd24324eabea737ec3d8e6974af9a60ef9828a9305ae81ecf8"
+  }
+]

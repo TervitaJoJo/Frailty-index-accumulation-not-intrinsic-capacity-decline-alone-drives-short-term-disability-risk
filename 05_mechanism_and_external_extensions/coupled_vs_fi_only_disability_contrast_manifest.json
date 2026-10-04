@@ -1,0 +1,19 @@
+{
+  "run_utc": "2026-10-03T22:54:33.572831+00:00",
+  "definitions": [
+    "primary_sign",
+    "cohort_median",
+    "meaningful_0.2SD",
+    "meaningful_0.5SD"
+  ],
+  "primary_rule": "delta_IC < 0 and delta_FI > 0",
+  "sensitivity_rules": "within-cohort median, 0.2 SD and 0.5 SD of the observed change; strict inequalities",
+  "development_model": "age + sex + education + baseline FI + cohort fixed effects",
+  "share_models": "age + sex + education + baseline FI, with and without country fixed effects",
+  "risk_difference": "unadjusted fixed-window disability risk; normal-approximation 95% CI",
+  "p_values": "two-sided nominal P values; Holm-adjusted P values across all 12 contrasts",
+  "threshold_selection": "all rules reported; no threshold selected by outcome or P value",
+  "estimand": "disability endpoint proportion; coded death treated as a non-disability endpoint in this contrast",
+  "nnt": "not estimated because this observational contrast is not an intervention effect",
+  "aggregate_only": true
+}
